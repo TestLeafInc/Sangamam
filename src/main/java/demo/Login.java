@@ -18,7 +18,8 @@ public class Login {
 		browser.findElement(By.id("username")).sendKeys("Demosalesmanager");
 		browser.findElement(By.id("password")).sendKeys("crmsfa");
 		browser.findElement(By.className("decorativeSubmit")).click();
-		browser.close();
+		//browser.close();
+		browser.quit();
 		
 	}
 
