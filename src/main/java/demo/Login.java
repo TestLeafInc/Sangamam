@@ -10,6 +10,7 @@ public class Login {
 	
 	public static void main(String[] args) {
 		
+		// Comment this code
 		WebDriverManager.edgedriver().setup();
 		EdgeDriver browser = new EdgeDriver();
 		browser.get("http://leaftaps.com/opentaps");
@@ -17,7 +18,7 @@ public class Login {
 		browser.findElement(By.id("username")).sendKeys("Demosalesmanager");
 		browser.findElement(By.id("password")).sendKeys("crmsfa");
 		browser.findElement(By.className("decorativeSubmit")).click();
-		
+		browser.close();
 		
 	}
 
